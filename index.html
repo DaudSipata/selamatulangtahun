@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Kejutan Ulang Tahun — Surat Cinta</title>
+<title>Kejutan Ulang Tahun untuk bubub aku </title>
 <style>
   :root{
     --accent:#ff5876;
@@ -82,7 +82,7 @@
   <div class="top" id="topArea">
     <div class="left">
       <h1 id="titleMain">🎉 Happy Birthday, Sayang! 🎉</h1>
-      <p class="lead" id="leadTxt">nyalakan lagunya dan dengarkan lagunya, baca pesanku perlahan.</p>
+      <p class="lead" id="leadTxt">Nyalakan lagunya dan dengarkan lagunya, baca pesanku perlahan.</p>
 
       <div class="typing-box" id="typingBox" aria-live="polite">
         <div id="typedText"></div><span id="cursor" class="cursor" aria-hidden="true"></span>
@@ -105,16 +105,16 @@
     <p id="surpriseSub">Foto-foto spesial kita — sentuh untuk perbesar.</p>
 
     <div class="gallery" id="gallery">
-      <div class="item"><img src="./foto/foto1.jpeg" alt="1"></div>
-      <div class="item"><img src="./foto/foto2.jpeg" alt="2"></div>
-      <div class="item"><img src="./foto/foto3.jpeg" alt="3"></div>
-      <div class="item"><img src="./foto/foto4.jpeg" alt="4"></div>
-      <div class="item"><img src="./foto/foto5.jpeg" alt="5"></div>
-      <div class="item"><img src="./foto/foto6.jpeg" alt="6"></div>
-      <div class="item"><img src="./foto/foto7.jpeg" alt="7"></div>
-      <div class="item"><img src="./foto/foto8.jpeg" alt="8"></div>
-      <div class="item"><img src="./foto/foto9.jpeg" alt="9"></div>
-      <div class="item"><img src="./foto/foto10.jpeg" alt="10"></div>
+      <div class="item"><img src="foto1.jpeg" alt="1"></div>
+      <div class="item"><img src="foto2.jpeg" alt="2"></div>
+      <div class="item"><img src="foto3.jpeg" alt="3"></div>
+      <div class="item"><img src="foto4.jpeg" alt="4"></div>
+      <div class="item"><img src="foto5.jpeg" alt="5"></div>
+      <div class="item"><img src="foto6.jpeg" alt="6"></div>
+      <div class="item"><img src="foto7.jpeg" alt="7"></div>
+      <div class="item"><img src="foto8.jpeg" alt="8"></div>
+      <div class="item"><img src="foto9.jpeg" alt="9"></div>
+      <div class="item"><img src="foto10.jpeg" alt="10"></div>
     </div>
 
     <div class="wa-wrap" id="waWrap">
@@ -131,31 +131,27 @@
 
 <!-- audio -->
 <audio id="bgAudio" loop preload="auto">
-  <source src="./music/lagu.mpeg" type="audio/mpeg" />
+  <source src="lagu.mpeg" type="audio/mpeg" />
 </audio>
 
 <!-- confetti lib -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
 <script>
-/* === EDIT DI SINI ===
- - Ganti file: LAGU.mp3, FOTO_AWAL.jpg, FOTO1.jpg..FOTO4.jpg
- - Ganti nomor WhatsApp pada sendWAbtn listener (format: 6281234567890)
-*/
 
 // teks panjang (surat cinta) — sudah diisi
-const longMessage = `Hai sayangku…
-Hari ini bukan sekadar tanggal biasa, ini adalah hari spesial, hari di mana seseorang yang sangat berharga di hidupku hadir ke dunia.
-Aku mau bilang, terima kasih karena sudah menjadi bagian dari hidupku. Terima kasih sudah bertahan sejauh ini, sudah selalu tersenyum meski kadang lelah, dan sudah membagi waktumu untuk aku.
+const longMessage = `Sayangku…
+Hari ini adalah hari yang begitu istimewa. Bukan sekadar tanggal di kalender, tapi hari di mana dunia dikaruniai seseorang yang begitu luar biasa—kamu. Aku ingin kamu tahu, betapa berharganya dirimu bagiku, betapa dalamnya aku bersyukur karena hidupku bersentuhan denganmu.
 
-Aku tahu… aku bukan orang yang sempurna, kadang menyebalkan, kadang bikin kesal. Tapi percayalah, dari sekian banyak hal yang aku punya, hatiku cuma punya satu tujuan: menjaga kamu.
+Aku tak bisa selalu sempurna di matamu. Aku tahu aku kadang menyebalkan, kadang membuatmu marah atau kecewa. Tapi setiap detik yang aku jalani, setiap langkah yang aku ambil, selalu tertuju padamu. Hatiku hanya punya satu tujuan: menjaga kamu, mencintaimu, dan membuatmu merasa dicintai tanpa henti.
 
-Hari ini aku cuma mau kamu tahu, kamu itu luar biasa. Kamu adalah alasanku tersenyum setiap hari, alasan aku mau berjuang, dan alasan aku percaya bahwa kebahagiaan itu nyata.
+Aku ingin kamu mengerti, sayang, bahwa kamu adalah alasan aku bertahan, alasan aku tersenyum meski hari berat, dan alasan aku percaya bahwa cinta itu nyata. Setiap kali aku melihatmu, hatiku dipenuhi rasa hangat yang tak bisa diungkapkan dengan kata-kata. Setiap tawa, setiap senyumanmu, adalah hadiah terindah yang membuat hidupku lengkap.
 
-Selamat ulang tahun, cintaku ❤️
-Semoga semua doa terbaik mengiringi langkahmu, semoga segala yang kamu inginkan pelan-pelan datang menghampiri.
+Hari ini aku ingin berjanji padamu, meski tak sempurna, aku akan selalu berada di sampingmu. Aku ingin menjadi pelabuhan di tengah badaimu, tempatmu bersandar saat lelah, tempatmu merasa aman saat dunia terasa kejam. Aku ingin membuatmu bahagia, bukan hanya hari ini, tapi untuk sisa hidupku.
 
-Aku sayang kamu… hari ini, besok, dan selamanya.`;
+Selamat ulang tahun, cintaku… Semoga setiap doa dan harapanmu tercapai, semoga setiap langkahmu dipenuhi cahaya, dan semoga kamu selalu merasakan cinta yang sama dalam hatimu seperti yang aku rasakan untukmu—lebih dalam dari yang pernah aku bayangkan.
+
+Aku mencintaimu… lebih dari kata-kata, lebih dari waktu, lebih dari segalanya. Hari ini, esok, dan selamanya, aku akan selalu menyayangimu. Bahkan ketika aku tak mampu mengucapkannya, ketahuilah, hatiku selalu berbisik namamu dalam setiap detak.`;
 
 // typing effect settings
 const typingSpeed = 24; // ms per character (sesuaikan)
@@ -291,4 +287,5 @@ window.addEventListener('load', ()=> {
 </script>
 </body>
 </html>
+
 
