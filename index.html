@@ -262,7 +262,7 @@ document.getElementById('sendWA').addEventListener('click', ()=>{
   const msg = document.getElementById('replyText').value || 'Makasih ya sayang ❤️';
   const text = name ? `Halo, saya ${name} - ${msg}` : msg;
   if(!nomorWhatsApp || nomorWhatsApp === '6285161313632'){ alert('Silakan edit kode dan masukkan nomor WhatsApp kamu (format internasional: 628...)'); return; }
-  window.open(`https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(text)}`, '_blank');
+  window.open(`https://wa.me/628516131363${nomorWhatsApp}?text=${encodeURIComponent(text)}`, '_blank');
 });
 
 // close surprise
@@ -287,5 +287,6 @@ window.addEventListener('load', ()=> {
 </script>
 </body>
 </html>
+
 
 
